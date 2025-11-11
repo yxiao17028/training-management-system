@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Verify - Training Management</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container py-5">
+  <div class="card mx-auto auth-card">
+    <div class="card-body">
+      <h3 class="card-title mb-3">Verification</h3>
+      <p class="text-muted">Enter verification code for Staff / Admin registration.</p>
+      <form id="verifyForm">
+        <div class="mb-3">
+          <label for="code" class="form-label">Verification Code</label>
+          <input id="code" class="form-control" required />
+        </div>
+        <div id="vmsg" class="text-danger mb-2"></div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-primary" type="submit">Verify</button>
+          <a class="btn btn-outline-secondary" href="login.html">Back to Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="js/verify.js"></script>
+</body>
+</html>
